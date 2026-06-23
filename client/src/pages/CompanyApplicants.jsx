@@ -10,7 +10,7 @@ function CompanyApplicants() {
   useEffect(() => {
     fetchApplicants();
   }, []);
-
+  
   const fetchApplicants = async () => {
     try {
       const res = await axios.get(

@@ -8,12 +8,12 @@ function Companies() {
   const [companies, setCompanies] = useState([]);
   const [search, setSearch] = useState("");
   const [locationFilter, setLocationFilter] = useState("");
-  const [applicantCounts, setApplicantCounts] =
-  useState({});
+  const [, setApplicantCounts] =useState({});
 
-  useEffect(() => {
-    fetchCompanies();
-  }, []);
+ // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  fetchCompanies();
+}, []);
 const fetchApplicantCounts =
   async (companiesData) => {
     const counts = {};
