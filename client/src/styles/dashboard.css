@@ -1,0 +1,138 @@
+/* =========================
+   DASHBOARD PAGE
+========================= */
+
+.dashboard-container {
+  padding: 30px;
+}
+
+/* Welcome Card */
+
+.welcome-card h2,
+.dashboard-info-card h4 {
+  color: #ffffff !important;
+}
+.welcome-card {
+  background: #1e293b;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.welcome-card h2 {
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.welcome-card p {
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Dashboard Grid */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Cards */
+
+.dashboard-card {
+  background: #1e293b;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  border-color: #22c55e;
+}
+
+.dashboard-card h5 {
+  color: #94a3b8;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.dashboard-card h2 {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+/* Colored Border Top */
+
+.gradient-purple {
+  border-top: 4px solid #8b5cf6;
+}
+
+.gradient-blue {
+  border-top: 4px solid #3b82f6;
+}
+
+.gradient-green {
+  border-top: 4px solid #22c55e;
+}
+
+.gradient-orange {
+  border-top: 4px solid #f59e0b;
+}
+
+.gradient-pink {
+  border-top: 4px solid #ec4899;
+}
+
+.gradient-red {
+  border-top: 4px solid #ef4444;
+}
+
+/* Quick Actions */
+
+.quick-actions {
+  margin-top: 25px;
+  background: #1e293b;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.quick-actions h3 {
+  color: white;
+}
+
+.quick-actions p {
+  color: #94a3b8;
+}
+
+/* Info Card */
+
+.dashboard-info-card {
+  margin-top: 25px;
+  background: #1e293b;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.dashboard-info-card h4 {
+  color: white;
+}
+
+.dashboard-info-card p {
+  color: #94a3b8;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}

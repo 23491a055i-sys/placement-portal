@@ -1,0 +1,272 @@
+/* ===================================
+   GLOBAL CSS
+=================================== */
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(16, 185, 129, 0.15),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(37, 99, 235, 0.15),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #111827,
+      #0b1120
+    );
+
+  color: white;
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+}
+
+/* COMMON CONTAINER */
+
+.container {
+  padding-top: 20px;
+}
+
+/* COMMON PAGE TITLE */
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* COMMON CARD */
+
+.glass-card,
+.card {
+  background: rgba(17, 24, 39, 0.92);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+
+  color: white;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+/* PARAGRAPHS */
+
+p,
+span,
+label,
+td,
+th {
+  color: #d1d5db;
+}
+
+/* INPUTS */
+
+input,
+textarea,
+select,
+.form-control,
+.form-select {
+  background: #1f2937 !important;
+
+  color: white !important;
+
+  border: 1px solid #374151 !important;
+
+  border-radius: 12px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* INPUT FOCUS */
+
+input:focus,
+textarea:focus,
+select:focus,
+.form-control:focus,
+.form-select:focus {
+  border-color: #10b981 !important;
+
+  box-shadow:
+    0 0 0 3px rgba(16, 185, 129, 0.2) !important;
+}
+
+/* BUTTONS */
+
+.btn {
+  border: none !important;
+
+  border-radius: 12px !important;
+
+  font-weight: 600 !important;
+
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* PRIMARY */
+
+.btn-primary {
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    ) !important;
+
+  color: white !important;
+}
+
+/* SUCCESS */
+
+.btn-success {
+  background:
+    linear-gradient(
+      135deg,
+      #10b981,
+      #059669
+    ) !important;
+
+  color: white !important;
+}
+
+/* DANGER */
+
+.btn-danger {
+  background:
+    linear-gradient(
+      135deg,
+      #ef4444,
+      #dc2626
+    ) !important;
+
+  color: white !important;
+}
+
+/* WARNING */
+
+.btn-warning {
+  background:
+    linear-gradient(
+      135deg,
+      #f59e0b,
+      #d97706
+    ) !important;
+
+  color: white !important;
+}
+
+/* INFO */
+
+.btn-info {
+  background:
+    linear-gradient(
+      135deg,
+      #06b6d4,
+      #0891b2
+    ) !important;
+
+  color: white !important;
+}
+
+/* TABLES */
+
+table {
+  color: white !important;
+}
+
+thead {
+  background: #1f2937;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 10px;
+}
+
+/* FADE ANIMATION */
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.table {
+  --bs-table-bg: transparent !important;
+  --bs-table-striped-bg: transparent !important;
+  --bs-table-hover-bg: transparent !important;
+  color: white !important;
+}
+
+.table td,
+.table th {
+  background: transparent !important;
+}
